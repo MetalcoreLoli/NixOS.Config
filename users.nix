@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   # define a user account
   users.users.daniel = {
@@ -7,5 +7,6 @@
 	home = "/home/daniel";
 	description = "Daniel Freedman";
 	extraGroups = [ "wheel" "networkmanager" ];
+	shell = pkgs.zsh;
   };
 }
