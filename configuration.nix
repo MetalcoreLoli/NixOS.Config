@@ -110,7 +110,11 @@
      jetbrains.datagrip
      jetbrains.rider
 
+     # zsh und plugins for it
      zsh
+     zsh-autosuggestions
+     zsh-syntax-highlighting
+     zsh-completions
    ];
 
   # Some programs need SUID wrappers, can be configured further or are

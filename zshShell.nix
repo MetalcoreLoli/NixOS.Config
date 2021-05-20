@@ -10,5 +10,6 @@
         programs.zsh.ohMyZsh.customPkgs = [
 		pkgs.nix-zsh-completions
 		pkgs.zsh-autosuggestions
+		pkgs.zsh-syntax-highlighting
 	];
 }
