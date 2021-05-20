@@ -14,6 +14,9 @@
 
       # include flatpak module
       ./flatpak.nix
+
+      #include zsh module
+      ./zshShell.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -106,6 +109,8 @@
      # jetbrains
      jetbrains.datagrip
      jetbrains.rider
+
+     zsh
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
