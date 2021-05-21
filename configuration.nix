@@ -115,6 +115,10 @@
      zsh-autosuggestions
      zsh-syntax-highlighting
      zsh-completions
+
+
+     # htop
+     htop
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
