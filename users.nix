@@ -6,7 +6,7 @@
 	createHome = true;
 	home = "/home/daniel";
 	description = "Daniel Freedman";
-	extraGroups = [ "wheel" "networkmanager" ];
+	extraGroups = [ "wheel" "networkmanager" "docker" ];
 	shell = pkgs.zsh;
   };
 }

@@ -17,6 +17,9 @@
 
       #include zsh module
       ./zshShell.nix
+
+      # docker
+      ./dockerConfig.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -121,6 +124,8 @@
      # htop
      htop
 
+    # docker
+    docker
 
    ];
 
