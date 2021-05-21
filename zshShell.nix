@@ -3,7 +3,7 @@
 	programs.zsh.enable = true;
 	programs.zsh.ohMyZsh = {
  		enable  = true;
-		plugins = [ "git" ];
+		plugins = [ "git" "cargo" ];
 		theme   = "lambda"; 
         };
 
