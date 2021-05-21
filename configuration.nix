@@ -105,6 +105,7 @@
      gcc
      gdb
      cgdb
+     clang_12 # clang compiler
 
      # jetbrains
      jetbrains.datagrip
@@ -119,6 +120,8 @@
 
      # htop
      htop
+
+
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
