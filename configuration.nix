@@ -138,6 +138,9 @@
     ghcid
     hlint
 
+    #other
+    qbittorrent
+
     # dotnet-sdk_3
    ];
 
