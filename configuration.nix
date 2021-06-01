@@ -110,6 +110,7 @@
      gcc
      gdb
      cgdb
+     cmake
      clang_12 # clang compiler
 
      # jetbrains
