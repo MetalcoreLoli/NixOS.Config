@@ -20,6 +20,8 @@
 
       # docker
       ./dockerConfig.nix
+      #vpn
+      ./vpn.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -113,6 +115,7 @@
      # jetbrains
      jetbrains.datagrip
      jetbrains.rider
+     jetbrains.clion
 
      # zsh und plugins for it
      zsh
@@ -120,6 +123,8 @@
      zsh-syntax-highlighting
      zsh-completions
 
+     #vpn
+     openvpn
 
      # htop
      htop
@@ -127,7 +132,14 @@
     # docker
     docker
 
+    # haskell
+    ghc
+    ghcid
+    hlint
+
+    # dotnet-sdk_3
    ];
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
