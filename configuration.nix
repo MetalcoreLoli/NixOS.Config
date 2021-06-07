@@ -10,18 +10,31 @@
       ./hardware-configuration.nix
       
       # include the users accounts
-      ./users.nix 
+      ./sys/users.nix 
 
+      #	applications
       # include flatpak module
-      ./flatpak.nix
+      ./apps/flatpak.nix
 
       #include zsh module
-      ./zshShell.nix
+      ./apps/zshShell.nix
 
       # docker
-      ./dockerConfig.nix
-      #vpn
-      ./vpn.nix
+      ./apps/dockerConfig.nix
+
+      # neovim
+      ./apps/vim.nix
+
+      # net
+      # vpn
+      ./net/vpn.nix
+
+
+      # LaTeX
+      # nixos.texlive.combined.scheme-basi
+      
+      # zathura
+      #zathura
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -57,7 +70,7 @@
 
   # Enable the GNOME 3 Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome3.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   
 
   # Configure keymap in X11
@@ -89,7 +102,7 @@
   environment.systemPackages = with pkgs; [
      wget 
      kitty
-     neovim
+     #neovim
      neofetch
      firefox
 
@@ -99,6 +112,7 @@
      gnome3.gnome-tweak-tool
 
      git
+     gnumake
 
      # js
      nodejs
@@ -120,6 +134,7 @@
 
      # zsh und plugins for it
      zsh
+     oh-my-zsh
      zsh-autosuggestions
      zsh-syntax-highlighting
      zsh-completions
@@ -141,7 +156,20 @@
     #other
     qbittorrent
 
-    # dotnet-sdk_3
+    # .NET 
+    dotnet-sdk_5
+    
+    # patchelf tools
+    patchelf
+    autoPatchelfHook
+
+    
+    #linkerd
+    #
+    #
+    #GNUnet
+    gnunet
+    gnunet-gtk
    ];
 
 
